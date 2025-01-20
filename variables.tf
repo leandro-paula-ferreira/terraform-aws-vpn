@@ -28,3 +28,15 @@ variable "environment_name" {
   description = "The name of the product environment"
   type        = string
 }
+
+variable "tags" {
+  description = "Tags adicionais para serem aplicadas a todos os recursos"
+  type        = map(string)
+  default     = {}
+}
+
+variable "name_prefix" {
+  description = "Prefixo para o nome dos recursos"
+  type        = string
+  default     = ""
+}
